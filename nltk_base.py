@@ -17,7 +17,7 @@ vectorizer = TfidfVectorizer()
 vector = vectorizer.fit_transform([query]) 
 
 # Get the feature names (i.e., the tokenized words)
-feature_names = vectorizer.get_feature_names()
+feature_names = vectorizer.get_feature_names_out()
 print("Feature Names:", feature_names)
 
 # Print the vectorized query

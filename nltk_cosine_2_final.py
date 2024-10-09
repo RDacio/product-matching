@@ -43,5 +43,3 @@ ranked_products = search_products(client_desc, db_descriptions)
 # Print the client description and the best matching description from the database
 print(f"Client Description: {client_desc}")
 print(f"Best Match in DB: {ranked_products[0][0]} (Score: {ranked_products[0][1]})")
-
-print("Client Vector",TfidfVectorizer(client_desc))
